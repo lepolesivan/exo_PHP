@@ -67,13 +67,13 @@
 
     //Exerice 10
       define('AGE_LEGAL', 18);
-      $age = 10;
+      $age = random_int(0,99);
       if ($age >= AGE_LEGAL) {
         echo '<p style= "color:red"> Exercice 10</p>';
-        echo "<p>T'as plus de " . AGE_LEGAL . ' mais je pense que tu le sais</p>';
+        echo "<p>T'as plus de " . AGE_LEGAL . 'ans mais je pense que tu le sais</p>';
       }else{
         echo '<p style= "color:red"> Exercice 10</p>';
-        echo "<p>T'as moins de " . AGE_LEGAL . ' mais je pense que tu le sais</p>';;
+        echo "<p>T'as moins de " . AGE_LEGAL . 'ans  mais je pense que tu le sais</p>';;
       }
       echo '</main>';
 ?>
