@@ -1,5 +1,9 @@
 <?php
     require 'partials/head.php';
+?>
+    <h1 class="text-center">Exercice Concatenation</h1>
+<?php
+echo '<main class="ps-5">';
     // Exercice 1
     $prenom = 'Julein';
     $nom = 'Defreitas';
@@ -52,7 +56,7 @@
     $b = 10;
     $resultat = $a + $b;
     echo '<p style= "color:red"> Exercice 9</p>';
-    echo "<p>La somme de $a et $b est $resultat</p>";
+    echo "<p>La somme de $a et $b est $resultat</p></main>";
 ?>
 
 <?php

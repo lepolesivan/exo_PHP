@@ -24,6 +24,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/exerciceConcatenation.php">Exercice concatenation</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/exerciceConstante.php">Exercice Constante</a>
+        </li>
       </ul>
     </div>
   </div>
