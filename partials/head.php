@@ -36,6 +36,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/exerciceTableau.php">Exercice Tableau</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/exerciceBoucle.php">Exercice Boucle</a>
+        </li>
       </ul>
     </div>
   </div>

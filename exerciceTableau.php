@@ -7,11 +7,10 @@
     echo '<main class="ps-5">';
 
     //Exercice 1
-    echo '<p style="color: red">Exercice 1</p>';
-    $film = ['Harry poter','Avatar','Lucky','JJK','HunterXhunter'];
-    for($i = 0; $i< count( $film); $i++){
-        echo '<p>' . $film[$i] . '</p>';
-    }
+    $filmsPreferes = array('Inception', 'Le Seigneur des Anneaux', 'Interstellar', 'Gladiator', 'Matrix');
+    var_dump($filmsPreferes);
+
+    echo "<h3>Liste de mes films préférés :</h3>";
 
     //Exercice 2
     echo '<p style="color: red">Exercice 2</p>';
@@ -57,7 +56,7 @@
         ),
     );
 
-    echo '<p>Le premier étudiant de ma liste est ' . $classe[1]['note'] . ' mais il a la pire note de la classe</p>';
+    echo '<p>Le premier étudiant de ma liste est ' . $classe[0]['note'] . ' mais il a la pire note de la classe</p>';
 
     //Exercice 6
     echo '<p style="color: red">Exercice 6</p>';
@@ -86,22 +85,18 @@
     //Exercice 9
     echo '<p style="color: red">Exercice 9</p>';
     $aleatoire = [10, 1541, 56, 8479, 848, 4, 7, 63];
-    $spécifique = 4;
-    
-    for($i = 0; $i < sizeof($aleatoire); $i++){
-        
-        if($aleatoire[$i] == $spécifique){
-            echo "<p>Tu m'as trouvé</p>";
-            break;
-        }else{
-            echo "<p>Une prochaine fois</p>";
-        }
-    }; ///J'ai faux prend la CORRECTION
+
+    if(in_array(55, $aleatoire)){
+        echo "<p>Tu m'as trouvé</p>";
+    }else{
+        echo "<p>Une prochaine fois</p>";
+    }
 
     //Exercice 10
     echo '<p style="color: red">Exercice 10</p>';
     $prenom = ['Fatima', 'Sarah', 'Allaan', 'Abdel-karim'];
     $nom = ['Salah', 'Gobrial', 'Salim', 'Ahabad'];
+
     $nomComplet = array_map(Null, $nom, $prenom);
     print_r($nomComplet);
 
