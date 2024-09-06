@@ -39,6 +39,12 @@
         <li class="nav-item">
           <a class="nav-link" href="/exerciceBoucle.php">Exercice Boucle</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/exerciceDate.php">Exercice Date</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/exerciceFonction.php">Exercice Fonction</a>
+        </li>
       </ul>
     </div>
   </div>

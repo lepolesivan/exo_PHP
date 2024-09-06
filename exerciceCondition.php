@@ -4,8 +4,6 @@
     <h1 class="text-center">Exercice Condition</h1>
 <?php
     echo '<main class="ps-5">';
-echo '</main>';
-
     //Exercice 1
     echo '<p style="color: red">Exercice 1</p>';
     $age = 18;
@@ -68,23 +66,25 @@ echo '</main>';
 
     //Exercice 5
     echo '<p style="color: red">Exercice 5</p>';
-    $note1 = 0;
-    $note2 = 0;
-    $note3 = 0;
-    $moyenne = ($note1 + $note2 +$note3)/3;
-    if($moyenne >= 20){
-        if($moyenne >= 10){
-            echo "<p>bsahthek frère! moyenne:$moyenne</p>";
-        }elseif($moyenne < 10 && $moyenne > 0){
-            echo "<p>Bon courage! moyenne:$moyenne</p>";
-        }else{
-            echo "<p>😱😱😱</p>";
+    $note1 = 12;
+    $note2 = 8;
+    $note3 = 15;
+
+    $moyenne = ($note1 + $note2 + $note3) / 3;
+
+    if($moyenne >=20 ){
+        if ($moyenne >= 10) {
+            echo "<p>La moyenne est $moyenne. Vous avez réussi l'examen.</p>";
+        } else {
+            echo "<p>La moyenne est $moyenne. Vous avez échoué l'examen.</p>";
         }
+    } else {
+        echo "<p>Il y a une erreur dans la $moyenne.</p>";
     }
 
     //Exercice 6
     echo '<p style="color: red">Exercice 6</p>';
-    $var;
+    $var = true;
     if(isset($var)){
         echo "<p>$var est définie.</p>";
     } else {
@@ -138,6 +138,7 @@ echo '</main>';
     } else {
         echo "<p>Connexion impossible : choisissez une méthode de connexion.</p>";
     }
+    echo '</main>';
 ?>
 <?php
     require 'partials/footer.php';
